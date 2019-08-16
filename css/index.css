@@ -256,7 +256,12 @@ img {
   border-bottom: 2px dashed #C0C0C0;
 }
 .top-container h1 {
-  padding-bottom: 2%;
+  font-weight: 600;
+}
+@media (max-width: 500px) {
+  .top-container h1 {
+    padding-bottom: 2%;
+  }
 }
 .home .top-content {
   border-bottom: 2px dashed #C0C0C0;
@@ -382,7 +387,7 @@ img {
 }
 .home .content-pick .destination .btn {
   color: #FFFFFF;
-  padding: 3%;
+  padding: 2%;
   max-width: 82%;
   background: #17A2B8;
   font-size: 2em;
@@ -393,7 +398,7 @@ img {
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
     color: #FFFFFF;
-    padding: 3%;
+    padding: 2%;
     max-width: 100%;
     background: #17A2B8;
     font-size: 2em;
