@@ -1,1 +1,61 @@
 // Mixins in here
+
+
+
+
+.border-bottom{
+    border-bottom: 2px dashed @navigation-border;
+}
+//button mixin
+
+.button(@color:@white, @max-width:82%, @background:@eastern-blue, @font-family:inherit){
+    color:@color; 
+    padding: 2%; 
+    max-width:@max-width; 
+    background:@background; 
+    font-size: 2em; 
+    font-family:@font-family; 
+    text-align: center; 
+    border-radius: 15px; 
+}
+
+
+//flex
+
+.flex-column(@column:column){
+    display:flex; 
+    flex-direction:@column; 
+    justify-content:center;
+    align-items:center; 
+     
+
+}
+
+.flex-between{
+    display:flex; 
+    justify-content:space-between; 
+}
+
+//animation mixin
+.fadeIn(@seconds:5s){
+    -webkit-animation-name: fadeIn; 
+    -webkit-animation-duration:5s; 
+    animation-name: fadeIn; 
+    animation-duration:@seconds; 
+    @-webkit-keyframes fadeIn {
+        0% {opacity: 0;}
+        20% {opacity:0.2;}
+        40% {opacity:0.4;}
+        60% {opacity:0.6;}
+        80% {opacity:0.8;}
+        100% {opacity:1; }
+    }
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        20% {opacity:0.2;}
+        40% {opacity:0.4;}
+        60% {opacity:0.6;}
+        80% {opacity:0.8;}
+        100% {opacity:1; }
+    }
+}
