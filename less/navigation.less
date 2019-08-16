@@ -1,12 +1,32 @@
 // Navigation Styles here
-.navbar{
-        .navbar();
-        max-width: 800px;
-        width: 100%;
-        margin: 0 auto;
-
-        @media @mobile{
-                
-                
-              }
-        } 
+ .navbar{
+      .flex-between();
+      padding:3% 0;  
+      font-weight: 590; 
+      max-width: 800px;
+      width: 100%;
+      margin: 0 auto;
+      @media @mobile{
+            .flex-column(column); 
+            padding:3% 8%;
+            h1{
+                  text-align: center; 
+            }
+      }
+           
+       nav{
+            .flex-between();
+            font-family:inherit; 
+            font-size:1.8em; 
+            min-width:40%; 
+            @media @mobile{
+                  width: 100%; 
+            }    
+            a{
+                  text-decoration: none; 
+                  color: @shark; 
+            }
+      }
+        
+        
+}

@@ -1,35 +1,7 @@
 // Mixins in here
 
 //mixin for navbar
-.navbar{
-    .flex-between();
-    padding:3% 0;  
-    font-weight: 590; 
-    @media @mobile{
-        .flex-column(column); 
-        padding:3% 8%;
-        h1{
-            text-align: center; 
-        }
-    }
-   
-    nav{
-        .flex-between();
-        font-family:inherit; 
-        font-size:1.8em; 
-        min-width:40%; 
-        @media @mobile{
-            width: 100%; 
-        }
-        
-        a{
-            text-decoration: none; 
-            color: @shark; 
-        }
-    }
 
-
-}
 
 .border-bottom{
     border-bottom: 2px dashed @navigation-border;
